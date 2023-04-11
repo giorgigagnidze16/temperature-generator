@@ -16,17 +16,16 @@ import java.nio.charset.StandardCharsets;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.client.RestTemplate;
 
 public class Main {
   public static final String QUEUE = "thermostat_creation_queue";
   public static final String EXCHANGE = "thermostat_creation_exc";
   public static final String ROUTING_KEY = "thermostat_routing_key";
-  private static final String API = "http://localhost:8080/api/noauth";
+  private static final String API = "http://backend:8080/api/noauth";
 
   public static void main(String[] args) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("localhost");
+    factory.setHost("rabbitmq");
     factory.setPort(5672);
     factory.setUsername("guest");
     factory.setPassword("guest");
