@@ -1,7 +1,13 @@
 # temperature-generator
 
-This is a random temperature generator for: https://github.com/giorgigagnidze16/prj-thrm-boot
+This is a random temperature generator for Thermostat management service:
 
-Using: 
 
-RabbitMQ client, HttpClient, Docker
+https://github.com/giorgigagnidze16/prj-thrm-boot
+
+Generator Uses: 
+
+RabbitMQ client & Spring HttpClient
+
+Container:
+https://hub.docker.com/r/jetskibaby/generator
